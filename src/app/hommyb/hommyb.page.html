@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons solt="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Hommy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card class="=bienvenidos" *ngFor="let dadoRepublica of dadosRepublicas">
+    <ion-card-header>
+      <h1>{{dadoRepublica.nome}}</h1>
+      <ion-card-title>{{dadoRepublica.preco}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{dadoRepublica.endereco}}
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
